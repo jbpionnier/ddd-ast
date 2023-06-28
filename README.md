@@ -23,25 +23,10 @@ In the project directory:
 
 That's how this package is intended to be used 😃
 
-Suppose you have a Java project "my-java-project"
-
-Just create this `package.json` file at the root of the project:
-
-```json
-{
-  "name": "my-java-project",
-  "version": "0.0.1",
-  "devDependencies": {
-    "@lolo101/ddd-ast": "1.0.4"
-  }
-}
-```
-Run `npm install`
-
-and then it becomes possible to use the `ddd` command in a script in your projects:
+Suppose you have a Java project "my-java-project" then you can use this command in a script in your projects:
 
 ```shell
-$ cat HelloWorldExample.java | npx ddd | sort | uniq -c | sort -nr
+$ cat HelloWorldExample.java | npx @lolo101/ddd-ast | sort | uniq -c | sort -nr
       2 System
       2 String
       2 println
